@@ -18,6 +18,19 @@ localPlugins: [
 ```
 3. Reload hyper or quit and re-open the application for changes to take effect if they don't show up immediately.
 
+### Options
+
+This plugin supports a light and a dark theme. It will default to the dark color palette if you don't supply a config, but you can add an `everforestTheme` key to your config object and pass it a value of `"dark"` or `"light"` and it will render the dark or light variant respectively.
+
+```js
+// .hyper.js
+module.exports = {
+  config: {
+    everforestTheme: "light" // defaults to dark
+  }
+}
+```
+
 ### License
 
 MIT
